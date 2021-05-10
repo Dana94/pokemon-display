@@ -1,0 +1,11 @@
+.Profile {
+    border: 1px solid red;
+}
+
+.Info {
+    width: 50%;
+    text-align: left;
+    padding: 1rem;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
