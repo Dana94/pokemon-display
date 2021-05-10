@@ -1,7 +1,15 @@
+import './Evolution.css';
+
 
 const Evolution = () => {
     return (
-        <div>Evolution</div>
+        <div className="Evolution">
+            <div className="Circle"></div>
+                -->
+            <div className="Circle"></div>
+                -->
+            <div className="Circle"></div>
+        </div>
     )
 }
 

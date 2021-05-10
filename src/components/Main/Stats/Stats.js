@@ -1,8 +1,9 @@
 
+import './Stats.css';
 
 const Stats = () => {
     return (
-        <div>
+        <div className="Stats">
             Stats
         </div>
     )

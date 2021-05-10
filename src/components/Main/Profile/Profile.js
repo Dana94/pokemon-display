@@ -8,7 +8,10 @@ const Profile = () => {
                 <h1>Name</h1>
                 <p>#ID</p>
                 <p>develop trick doctor blow clothes hearing flew record dear center friendly brick should happen search page sell current season spring tank color signal disappear</p>
+                <p>Sex Ratio:</p>
             </div>
+
+            <div className="Img"></div>
 
         </div>
     )
