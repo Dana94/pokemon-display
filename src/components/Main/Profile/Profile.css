@@ -1,0 +1,29 @@
+.Profile {
+    display: flex;
+}
+
+.Info {
+    width: 50%;
+    text-align: left;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.Img {
+    height: 200px;
+    background-color: aliceblue;
+    display: inline-block;
+    width: 200px;
+    margin: auto;
+}
+
+@media (max-width: 768px) {
+    .Profile {
+        flex-direction: column;
+    }
+
+    .Info {
+        width: auto;
+    }
+}
