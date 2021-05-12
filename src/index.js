@@ -1,17 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { ApolloClient, InMemoryCache } from '@apollo/client';
+import { ApolloProvider } from '@apollo/client/react';
+
+
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import DataContextProvider from './context/data-context';
 
+const client = new ApolloClient({
+  uri: 'https://graphqlpokemon.favware.tech/',
+  cache: new InMemoryCache()
+});
+
 ReactDOM.render(
-  <DataContextProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </DataContextProvider>,
+  <ApolloProvider client={client}>
+    <DataContextProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </DataContextProvider>
+  </ApolloProvider>,
   document.getElementById('root')
 );
 
