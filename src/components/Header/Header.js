@@ -1,9 +1,11 @@
+import Search from './Search/Search';
+
 import './Header.css';
 
 const Header = () => {
     return (
         <header>
-            <input type="input" />
+            <Search />
             <nav>
             </nav>
         </header>

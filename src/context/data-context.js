@@ -35,7 +35,7 @@ const DataContextProvider = props => {
     //     setPokemonHandler(data.getPokemonDetailsByName)
     // }
     return (
-        <DataContext.Provider value={{ pokemon: pokemon, loading: loading }}>
+        <DataContext.Provider value={{ pokemon: pokemon }}>
             {props.children}
         </DataContext.Provider>
     )
